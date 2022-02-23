@@ -1,0 +1,35 @@
+.buttons {
+    align-self: center;
+    padding: 20px;
+}
+
+.buttons__button {
+    margin-left: 15px;
+    background: none;
+    border: none;
+    color: hsl(180, 100%, 25%);
+    transition: 1s;
+}
+
+.buttons__button:hover {
+    color: hsl(180, 100%, 35%);
+}
+
+.buttons__button:active {
+    color: hsl(180, 100%, 40%);
+}
+
+.buttons__button:disabled {
+    color: #bbb;
+}
+
+@media (max-width: 700px) {
+    .buttons{
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+    }
+    .buttons__button {
+        margin: 10px;
+    }
+}
