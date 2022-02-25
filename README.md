@@ -1,12 +1,19 @@
 # Task list
 
+## Demo
+
+This page is available for preview here: https://marcin-malek.github.io/task-list-react/
+
+## About
+
 This web application is a part of frontend developer course that I have taken.
 
-## Functionalities
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+### Functionalities
 
 Task List project helps users manage their tasks. It allows users to create completely new task as well as deleting or marking chosen task as done.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
