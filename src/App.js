@@ -22,10 +22,13 @@ function App() {
       <h1>Lista zadań</h1>
       <Header title="Dodaj nowe zadanie" />
       <Form />
-      <Header title="Lista zadań" 
-      extraHeaderContent={<Buttons tasks={tasks} hideDoneTasks={hideDoneTasks}/>}
+      <Header
+        title="Lista zadań"
+        extraHeaderContent={<Buttons
+          tasks={tasks}
+          hideDoneTasks={hideDoneTasks} />}
       />
-      <List tasks={tasks} hideDoneTasks={hideDoneTasks}/>
+      <List tasks={tasks} hideDoneTasks={hideDoneTasks} />
     </>
   );
 }
