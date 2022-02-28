@@ -5,25 +5,29 @@ import Buttons from "./Buttons"
 import { useState } from "react"
 
 function App() {
-  const [tasks, setTasks] = useState([{
-    id: 1,
-    content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse laboriosam eius vero culpa illum magnam tempore, reiciendis unde, incidunt error, dolorum deserunt minus quibusdam cum nisi odio pariatur itaque? Tempore.",
-    done: false
-  },
-  {
-    id: 2,
-    content: "This task is done",
-    done: true
-  }]);
-
+  const [tasks, setTasks] = useState([]);
   const [hideDone, sethideDone] = useState(false);
+
+  const addNewTask = (content) => {
+    setTasks(tasks => [
+      ...tasks,
+      {
+        id: tasks.length ? tasks[tasks.length - 1].id + 1 : 1,
+        content,
+        done: false
+      },
+    ]);
+  };
 
   const toggleHideDone = () => {
     sethideDone(hideDone => !hideDone);
   }
 
-  const removeTask = (id) => {
-    setTasks(tasks => tasks.filter(task => task.id !== id))
+  const setAllDone = () => {
+    setTasks(tasks => tasks.map(task => ({
+      ...task,
+      done: true
+    })));
   }
 
   const toggleTaskDone = (id) => {
@@ -38,18 +42,15 @@ function App() {
     }));
   }
 
-  const setAllDone = () => {
-    setTasks(tasks => tasks.map(task => ({
-      ...task,
-      done: true
-    })));
+  const removeTask = (id) => {
+    setTasks(tasks => tasks.filter(task => task.id !== id))
   }
 
   return (
     <>
       <h1>Lista zadań</h1>
       <Header title="Dodaj nowe zadanie" />
-      <Form />
+      <Form addNewTask={addNewTask} />
       <Header
         title="Lista zadań"
         extraHeaderContent=

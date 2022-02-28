@@ -10,8 +10,9 @@ const List = ({ tasks, hideDone, toggleTaskDone, removeTask }) => (
                     </li>
                     <button
                         className="list__button"
-                        onClick={() => toggleTaskDone(task.id)}>
-                            {task.done ? "✔" : ""}
+                        onClick={() => toggleTaskDone(task.id)}
+                    >
+                        {task.done ? "✔" : ""}
                     </button>
                     <button
                         className="list__button list__button--delete"
