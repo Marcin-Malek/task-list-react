@@ -2,6 +2,7 @@ import Form from "./Form";
 import Header from "./Header";
 import List from "./List";
 import Buttons from "./Buttons"
+import { useState } from "react";
 
 const tasks = [{
   id: 1,
@@ -14,9 +15,10 @@ const tasks = [{
   done: true
 }]
 
-const hideDoneTasks = false;
 
 function App() {
+  const [hideDone, sethideDone] = useState(false);
+
   return (
     <>
       <h1>Lista zadań</h1>
@@ -26,9 +28,9 @@ function App() {
         title="Lista zadań"
         extraHeaderContent={<Buttons
           tasks={tasks}
-          hideDoneTasks={hideDoneTasks} />}
+          hideDone={hideDone} />}
       />
-      <List tasks={tasks} hideDoneTasks={hideDoneTasks} />
+      <List tasks={tasks} hideDone={hideDone} />
     </>
   );
 }
