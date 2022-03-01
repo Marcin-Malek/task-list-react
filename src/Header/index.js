@@ -1,10 +1,5 @@
-import "./style.css";
-
-const Header = ({ title, extraHeaderContent }) => (
-    <header className="header">
-        <h2 className="header__content">{title}</h2>
-        {extraHeaderContent}
-    </header>
+const Header = ({ title }) => (
+    <h1>{title}</h1>
 )
 
 export default Header;

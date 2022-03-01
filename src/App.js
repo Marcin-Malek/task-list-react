@@ -2,6 +2,7 @@ import Form from "./Form";
 import Header from "./Header";
 import List from "./List";
 import Buttons from "./Buttons"
+import Section from "./Section";
 import { useState } from "react"
 
 function App() {
@@ -48,23 +49,27 @@ function App() {
 
   return (
     <>
-      <h1>Lista zadań</h1>
-      <Header title="Dodaj nowe zadanie" />
-      <Form addNewTask={addNewTask} />
-      <Header
+      <Header title="Lista zadań" />
+      <Section
+        title="Dodaj nowe zadanie"
+        content={<Form addNewTask={addNewTask} />} />
+      <Section
         title="Lista zadań"
+        content=
+        {<List
+          tasks={tasks}
+          hideDone={hideDone}
+          toggleTaskDone={toggleTaskDone}
+          removeTask={removeTask}
+        />}
         extraHeaderContent=
         {<Buttons
           tasks={tasks}
           hideDone={hideDone}
           toggleHideDone={toggleHideDone}
-          setAllDone={setAllDone} />}
+          setAllDone={setAllDone}
+        />}
       />
-      <List
-        tasks={tasks}
-        hideDone={hideDone}
-        toggleTaskDone={toggleTaskDone}
-        removeTask={removeTask} />
     </>
   );
 }
