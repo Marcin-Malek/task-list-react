@@ -5,6 +5,6 @@ const Section = ({ title, content, extraHeaderContent }) => (
         <h2 className="section__header">{title} {extraHeaderContent}</h2>
         {content}
     </section>
-)
+);
 
 export default Section;

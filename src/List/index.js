@@ -19,11 +19,12 @@ const List = ({ tasks, hideDone, toggleTaskDone, removeTask }) => (
                     </span>
                     <button
                         className="list__button list__button--delete"
-                        onClick={() => removeTask(task.id)} />
+                        onClick={() => removeTask(task.id)}
+                    />
                 </li>
             )
         ))}
     </ul>
-)
+);
 
 export default List;
