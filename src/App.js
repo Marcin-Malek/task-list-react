@@ -1,13 +1,17 @@
 import Form from "./Form";
 import Header from "./Header";
 import List from "./List";
-import Buttons from "./Buttons"
+import Buttons from "./Buttons";
 import Section from "./Section";
-import { useState } from "react"
+import { useEffect, useState } from "react";
 
 function App() {
   const [tasks, setTasks] = useState([]);
   const [hideDone, sethideDone] = useState(false);
+
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
   const addNewTask = (content) => {
     setTasks(tasks => [
