@@ -6,7 +6,7 @@ import Section from "./Section";
 import { useEffect, useState } from "react";
 
 function App() {
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState(JSON.parse(localStorage.getItem("tasks")));
   const [hideDone, sethideDone] = useState(false);
 
   useEffect(() => {
