@@ -3,9 +3,7 @@ import { ButtonsContainer, Button } from "./styled";
 const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
     tasks.length > 0 && (
         <ButtonsContainer>
-            <Button
-                onClick={toggleHideDone}
-            >
+            <Button onClick={toggleHideDone}>
                 {hideDone ? "Pokaż" : "Ukryj"} ukończone
             </Button>
             <Button

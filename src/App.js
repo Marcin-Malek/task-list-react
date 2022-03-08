@@ -12,8 +12,8 @@ function App() {
   const toggleHideDone = () => {
     sethideDone(hideDone => !hideDone);
   }
-  const { tasks, addNewTask, setAllDone, toggleTaskDone, removeTask } = useTasks();
 
+  const { tasks, addNewTask, setAllDone, toggleTaskDone, removeTask } = useTasks();
 
   return (
     <>
@@ -40,6 +40,6 @@ function App() {
       />
     </>
   );
-}
+};
 
 export default App;

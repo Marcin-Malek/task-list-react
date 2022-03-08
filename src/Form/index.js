@@ -35,6 +35,6 @@ const Form = ({ addNewTask }) => {
             </Button>
         </StyledForm>
     );
-}
+};
 
 export default Form;
