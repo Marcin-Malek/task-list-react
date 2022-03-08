@@ -45,4 +45,4 @@ export const Button = styled.button`
             background-color: hsl(0, 100%, 50%);
         }
     `}
-`
+`;
