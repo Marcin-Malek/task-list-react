@@ -1,6 +1,6 @@
 import Form from "./Form";
 import Header from "./Header";
-import List from "./List";
+import Tasks from "./Tasks";
 import Buttons from "./Buttons";
 import Section from "./Section";
 import { useState } from "react";
@@ -24,7 +24,7 @@ function App() {
       <Section
         title="Lista zadań"
         content=
-        {<List
+        {<Tasks
           tasks={tasks}
           hideDone={hideDone}
           toggleTaskDone={toggleTaskDone}
