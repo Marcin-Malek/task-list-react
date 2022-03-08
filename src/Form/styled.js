@@ -18,7 +18,7 @@ export const Input = styled.input`
     border: 1.5px solid #ddd;
     margin-right: 20px;
 
-    ${({ fill }) => !fill && css`
+    ${({ contentPassed }) => !contentPassed && css`
         &:focus {
             outline-color: red;
         }
