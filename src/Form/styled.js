@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const StyledForm = styled.form`
     display: flex;
@@ -18,9 +18,16 @@ export const Input = styled.input`
     border: 1.5px solid #ddd;
     margin-right: 20px;
 
+    ${({ fill }) => !fill && css`
+        &:focus {
+            outline-color: red;
+        }
+    `}
+
     @media (max-width: 700px) {
         margin: 0 0 10px 0;
     }
+    
 `;
 
 export const Button = styled.button`
