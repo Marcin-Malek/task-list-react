@@ -5,6 +5,13 @@ import Buttons from "./Buttons";
 import Section from "./Section";
 import { useState } from "react";
 import { useTasks } from "./useTasks";
+import { ThemeProvider } from "styled-components";
+
+const theme = {
+  breakpoints: {
+    mobile: 767
+  },
+};
 
 function App() {
   const [hideDone, sethideDone] = useState(false);
@@ -16,7 +23,7 @@ function App() {
   const { tasks, addNewTask, setAllDone, toggleTaskDone, removeTask } = useTasks();
 
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <Header title="Lista zadań" />
       <Section
         title="Dodaj nowe zadanie"
@@ -38,7 +45,7 @@ function App() {
           setAllDone={setAllDone}
         />}
       />
-    </>
+    </ThemeProvider>
   );
 };
 

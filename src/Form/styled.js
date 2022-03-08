@@ -7,7 +7,7 @@ export const StyledForm = styled.form`
     padding: 20px;
     background-color: white;
 
-    @media (max-width: 700px) {
+    @media (max-width: ${({theme}) => theme.breakpoints.mobile}px) {
         flex-direction: column;
     }
 `;
@@ -24,7 +24,7 @@ export const Input = styled.input`
         }
     `}
 
-    @media (max-width: 700px) {
+    @media (max-width: ${({theme}) => theme.breakpoints.mobile}px) {
         margin: 0 0 10px 0;
     }
     

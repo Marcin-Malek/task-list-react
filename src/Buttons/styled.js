@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ButtonsContainer = styled.div`
-    @media (max-width: 700px) {  
+    @media (max-width: ${({theme}) => theme.breakpoints.mobile}px) {  
         display: flex;
         margin-top: 10px;
         flex-direction: column;
@@ -24,7 +24,7 @@ export const Button = styled.button`
         color: #bbb;
     }
 
-    @media (max-width: 700px) {  
+    @media (max-width: ${({theme}) => theme.breakpoints.mobile}px) {  
         margin: 10px;
     }
 `;
