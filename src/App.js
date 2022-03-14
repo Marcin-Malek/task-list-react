@@ -7,12 +7,6 @@ import { useState } from "react";
 import { useTasks } from "./useTasks";
 import { ThemeProvider } from "styled-components";
 
-const theme = {
-  breakpoints: {
-    mobile: 767
-  },
-};
-
 function App() {
   const [hideDone, sethideDone] = useState(false);
 
