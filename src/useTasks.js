@@ -27,7 +27,7 @@ export const useTasks = () => {
             ...task,
             done: true
         })));
-    }
+    };
 
     const toggleTaskDone = (id) => {
         setTasks(tasks => tasks.map(task => {
@@ -39,11 +39,11 @@ export const useTasks = () => {
             }
             return task;
         }));
-    }
+    };
 
     const removeTask = (id) => {
         setTasks(tasks => tasks.filter(task => task.id !== id))
-    }
+    };
 
-    return { tasks, addNewTask, setAllDone, toggleTaskDone, removeTask }
-}
+    return { tasks, addNewTask, setAllDone, toggleTaskDone, removeTask };
+};
