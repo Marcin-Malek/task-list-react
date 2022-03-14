@@ -15,12 +15,12 @@ export const StyledForm = styled.form`
 export const Input = styled.input`
     flex-grow: 1;
     padding: 10px;
-    border: 1.5px solid #ddd;
+    border: 1.5px solid ${({theme}) => theme.color.alto};
     margin-right: 20px;
 
     ${({ contentPassed }) => !contentPassed && css`
         &:focus {
-            outline-color: red;
+            outline-color: ${({theme}) => theme.color.red};
         }
     `}
 
@@ -31,14 +31,14 @@ export const Input = styled.input`
 `;
 
 export const Button = styled.button`
-    background-color: hsl(180, 100%, 25%);
+    background-color: ${({theme}) => theme.color.teal};
     color: white;
     border: none;
     padding: 10px;
     transition: 1s;
 
     &:hover {
-        background-color: hsl(180, 100%, 35%);
+        filter: brightness(120%);
         transform: scale(1.1);
     }
 `;

@@ -10,7 +10,7 @@ export const List = styled.ul`
 export const Item = styled.li`
     display: flex;
     margin: 0 20px;
-    border-bottom: 1.5px solid #ddd;
+    border-bottom: 1.5px solid ${({theme}) => theme.color.alto};
     align-items: center;
     list-style-type: none;
 `;
@@ -28,21 +28,21 @@ export const Button = styled.button`
     min-width: 30px;
     min-height: 30px;
     margin: 12px;
-    background-color: hsl(120, 100%, 25%);
+    background-color: ${({theme}) => theme.color.japaneseLaurel};
     transition: 1s;
 
     &:hover {
-        background-color: hsl(120, 100%, 30%);
+        filter: brightness(120%);
     }
 
     ${({ remove }) => remove && css`
         background: url(${deleteIcon}) center center no-repeat;
         background-size: 16px;
-        background-color: hsl(0, 100%, 45%);
+        background-color: ${({theme}) => theme.color.red};
         transition: 1s;
 
         &:hover {
-            background-color: hsl(0, 100%, 50%);
+            filter: brightness(120%);
         }
     `}
 `;

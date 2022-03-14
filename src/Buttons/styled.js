@@ -13,15 +13,16 @@ export const Button = styled.button`
     font-size: medium;
     background: none;
     border: none;
-    color: hsl(180, 100%, 25%);
+    color: ${({theme}) => theme.color.teal};
     transition: 1s;
 
     &:hover {
-        color: hsl(180, 100%, 35%);
+        filter: brightness(120%);
     }
 
     &:disabled { 
-        color: #bbb;
+        filter: none;
+        color: ${({theme}) => theme.color.silver};
     }
 
     @media (max-width: ${({theme}) => theme.breakpoints.mobile}px) {  

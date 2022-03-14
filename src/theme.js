@@ -4,7 +4,7 @@ export const theme = {
       teal: "#008080",
       silver: "#BBBBBB",
       japaneseLaurel: "#008000",
-      red: "#FF0000"
+      red: "#E60000"
     },
     breakpoints: {
       mobile: 767
