@@ -8,12 +8,23 @@ This page is available for preview here: https://marcin-malek.github.io/task-lis
 
 This web application is a part of frontend developer course that I have taken.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Some of the technologies I used in this project:
+
+- JS (ES6)
+- React.js
+- Styled Components
+- OpenGraph
+- Git
 
 ### Functionalities
 
 Task List project helps users manage their tasks. It allows users to create completely new task as well as deleting or marking chosen task as done.
 
+Described functionalities are shortly presented in the animation below:
+
+![Animation](Animation.gif)
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
