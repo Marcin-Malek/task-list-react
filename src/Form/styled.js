@@ -38,7 +38,7 @@ export const Button = styled.button`
     transition: 1s;
 
     &:hover {
-    background-color: hsl(180, 100%, 35%);
-    transform: scale(1.1);
+        background-color: hsl(180, 100%, 35%);
+        transform: scale(1.1);
     }
 `;
