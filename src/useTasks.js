@@ -45,5 +45,5 @@ export const useTasks = () => {
         setTasks(tasks => tasks.filter(task => task.id !== id))
     };
 
-    return { tasks, addNewTask, setAllDone, toggleTaskDone, removeTask };
+    return { addNewTask, setAllDone, toggleTaskDone, removeTask };
 };
