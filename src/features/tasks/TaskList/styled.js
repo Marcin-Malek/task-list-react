@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import deleteIcon from "../img/delete.png";
+import deleteIcon from "./img/delete.png";
 
 export const List = styled.ul`
     margin: 0;
