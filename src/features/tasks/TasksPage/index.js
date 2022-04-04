@@ -1,15 +1,16 @@
 import Form from "./Form";
-import Header from "../../common/Header";
+import Header from "../../../common/Header";
 import TaskList from "./TaskList";
 import Buttons from "./Buttons";
-import Section from "../../common/Section";
+import Section from "../../../common/Section";
 import { Button } from "./styled";
-import { fetchExampleTasks, selectFetchPending } from "./tasksSlice";
+import { fetchExampleTasks, selectFetchPending } from "../tasksSlice";
 import { useDispatch, useSelector } from "react-redux";
 
-const Tasks = () => {
+const TasksPage = () => {
   const dispatch = useDispatch();
   const fetchPending = useSelector(selectFetchPending);
+  
   return (
     <>
       <Header title="Lista zadań" />
@@ -34,4 +35,4 @@ const Tasks = () => {
   );
 };
 
-export default Tasks;
+export default TasksPage;
