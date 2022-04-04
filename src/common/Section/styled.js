@@ -12,7 +12,12 @@ export const Header = styled.h2`
     margin-bottom: 2px;
     padding: 20px;
 
-    @media (max-width: ${({theme}) => theme.breakpoints.mobile}px) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         flex-direction: column;
     }
+`;
+
+export const Content = styled.div`
+    padding: 20px;
+    background-color: white;
 `;

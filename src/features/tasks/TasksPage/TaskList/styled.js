@@ -2,14 +2,12 @@ import styled, { css } from "styled-components";
 import deleteIcon from "./img/delete.png";
 
 export const List = styled.ul`
-    margin: 0;
-    background-color: white;
-    padding: 20px 0 20px 0;
+    margin: 0 20px;
+    padding: 0;
 `;
 
 export const Item = styled.li`
     display: flex;
-    margin: 0 20px;
     border-bottom: 1.5px solid ${({theme}) => theme.color.alto};
     align-items: center;
     list-style-type: none;
