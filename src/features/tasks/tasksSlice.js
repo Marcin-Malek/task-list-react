@@ -60,5 +60,8 @@ export const selectHideDone = state => selectTasksState(state).hideDone;
 
 export const selectFetchPending = state => selectTasksState(state).fetchPending;
 
+export const getTaskById = (state, taskId) =>
+    selectTasks(state).find(({ id }) => id === taskId);
+
 export default tasksSlice.reducer;
 

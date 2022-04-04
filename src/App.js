@@ -1,4 +1,5 @@
 import TasksPage from './features/tasks/TasksPage/index';
+import TaskPage from './features/tasks/TaskPage/index';
 import { Switch } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import AuthorPage from './features/author/AuthorPage';
@@ -18,6 +19,9 @@ const App = () => (
                 </li>
             </ul>
             <Switch>
+                <Route path="/zadania/:id">
+                    <TaskPage />
+                </Route>
                 <Route path="/zadania">
                     <TasksPage />
                 </Route>
