@@ -18,7 +18,7 @@ const AuthorPage = () => (
                     <p>
                         Od Początku 2022 roku jestem mocno zaangażowanym uczestnikiem kursu <i>Frontend developer od podstaw</i>,
                         który organizowany jest przez zespół YouCode.
-                        Mam nadzieję, że moje determinacja w połączeniu z ciężką pracą pozwoli mi w przyszłości na uzyskanie mojej wymarzonej pracy jako programista. 😀
+                        Mam nadzieję, że moja determinacja w połączeniu z ciężką pracą pozwoli mi w przyszłości na uzyskanie mojej wymarzonej pracy jako programista. 😀
                     </p>
                 </>
             }
