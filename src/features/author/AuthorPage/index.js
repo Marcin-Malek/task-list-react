@@ -11,7 +11,7 @@ const AuthorPage = () => (
                     <p>
                         Nazywam się Marcin Małek, mam 22 lata i jestem absolwentem
                         <i>Uniwersytetu im. Adama Mickiewicza w Poznaniu</i>.
-                        Ukończylem studia na kierunku <i>Akustyka</i>.
+                        Ukończyłem studia na kierunku <i>Akustyka</i>.
                         Do końca 2021 roku pracowałem jako specjalista ds. Ochrony przed hałasem.
                         W pracy zajmowałem się zagadnieniami takimi jak <b>akustyka budowlana</b> i <b>hałas w środowisku</b>.
                     </p>
