@@ -9,4 +9,5 @@ export const theme = {
     breakpoints: {
       mobile: 767
     },
+    bodyWidth: 1000,
   };

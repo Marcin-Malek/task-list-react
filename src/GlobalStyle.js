@@ -12,9 +12,6 @@ export const GlobalStyle = createGlobalStyle`
     body {
     font-family: 'Montserrat', sans-serif;
     word-break: break-word;
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
     background-color: ${({theme}) => theme.color.alto};
     }
 `;
