@@ -21,7 +21,7 @@ Some of the technologies I used in this project:
 
 ### Functionalities
 
-Task List project helps users manage their tasks. It allows users to create completely new task as well as deleting or marking chosen task as done. One of additional features is fetching example tasks from app storage. Project also contains a page with a brief description of this application author.
+Task List project helps users manage their tasks. It allows users to create completely new task as well as searching, deleting or marking chosen task as done. One of additional features is fetching example tasks from app storage. Project also contains a page with a brief description of this application author.
 
 Described functionalities are shortly presented in the animation below:
 
