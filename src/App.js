@@ -4,18 +4,18 @@ import { Switch } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import AuthorPage from './features/author/AuthorPage';
 import { HashRouter } from 'react-router-dom';
-import { NavLink } from 'react-router-dom';
 import { Redirect } from 'react-router-dom';
+import { StyledNavLink } from './styled';
 
 const App = () => (
     <HashRouter>
         <nav>
             <ul>
                 <li>
-                    <NavLink to="/zadania">Zadania</NavLink>
+                    <StyledNavLink to="/zadania">Zadania</StyledNavLink>
                 </li>
                 <li>
-                    <NavLink to="/autor">O Autorze</NavLink>
+                    <StyledNavLink to="/autor">O Autorze</StyledNavLink>
                 </li>
             </ul>
             <Switch>
