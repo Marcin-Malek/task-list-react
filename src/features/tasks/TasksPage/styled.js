@@ -32,6 +32,7 @@ export const Button = styled.button`
     border: none;
     color: ${({ theme }) => theme.color.teal};
     transition: 0.5s;
+    cursor: pointer;
 
     &:hover {
         filter: brightness(120%);

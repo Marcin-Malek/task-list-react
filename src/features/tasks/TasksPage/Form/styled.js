@@ -15,6 +15,7 @@ export const Button = styled.button`
     padding: 10px;
     margin-left: 20px;
     transition: 1s;
+    cursor: pointer;
 
     &:hover {
         filter: brightness(120%);

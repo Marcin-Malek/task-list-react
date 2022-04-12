@@ -45,6 +45,7 @@ export const Button = styled.button`
     margin: 12px;
     background-color: ${({ theme }) => theme.color.japaneseLaurel};
     transition: 1s;
+    cursor: pointer;
 
     ${({ remove }) => remove && css`
         background: url(${deleteIcon}) center center no-repeat;
