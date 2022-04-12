@@ -31,8 +31,11 @@ const tasksSlice = createSlice({
         toggleHideDone: (state) => {
             state.hideDone = !state.hideDone
         },
-        toggleFetchPending: (state) => {
-            state.fetchPending = !state.fetchPending
+        startFetchPending: (state) => {
+            state.fetchPending = true;
+        },
+        finishFetchPending: (state) => {
+            state.fetchPending = false;
         },
         fetchExampleTasks: () => { },
     }
@@ -46,7 +49,8 @@ export const {
     setAllDone,
     fetchExampleTasks,
     setTasks,
-    toggleFetchPending,
+    startFetchPending,
+    finishFetchPending,
 } = tasksSlice.actions;
 
 
@@ -74,4 +78,3 @@ export const selectTasksByQuery = (state, query) => {
 }
 
 export default tasksSlice.reducer;
-
